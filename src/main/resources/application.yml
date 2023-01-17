@@ -1,12 +1,16 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/innospace
+    url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
-    password: mysecretpassword
+    password: postgres
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
+    defer-datasource-initialization: true
+  sql:
+    init:
+      mode: always

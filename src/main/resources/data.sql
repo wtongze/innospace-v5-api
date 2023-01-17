@@ -1,0 +1,1 @@
+INSERT INTO users VALUES ('test', NULL, 'b@c.com', True, NULL, '123456', 'ROLE_USER');
